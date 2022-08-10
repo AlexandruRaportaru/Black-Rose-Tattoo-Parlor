@@ -1,0 +1,26 @@
+.app__map {
+    min-height: 90vh;
+}
+
+.app__map-content {
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.app__map-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.app__map-text p {
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 580px) {
+    .app__map-text p {
+        font-size: 14px;
+    }
+}

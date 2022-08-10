@@ -1,0 +1,15 @@
+.app__logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    box-sizing: border-box;
+}
+
+.app__logo-letter {
+    font-family: var(--font-logo);
+    color: var(--color-white);
+    width: 40px;
+    font-weight: 100;
+    font-size: 25px;
+    padding: 5px 9px 0 7px;
+}

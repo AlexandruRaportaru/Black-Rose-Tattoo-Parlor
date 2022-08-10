@@ -1,0 +1,46 @@
+.app_header-title {
+    font-family: var(--font-logo);
+    font-size: 60px;
+    background: var(--color-black);
+    color: var(--color-golden);
+    font-weight: 100;
+    padding: 20px 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.app__header {
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+}
+
+.app__wrapper_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.app__wrapper_img img {
+    width: 65%;
+}
+
+@media screen and (min-width: 1920px) {
+    .app_header-title {
+        font-size: 75px;
+    }
+
+    .app__wrapper_img img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__wrapper_img img {
+        width: 65%;
+    }
+
+    .app_header-title {
+        font-size: 45px;
+    }
+}

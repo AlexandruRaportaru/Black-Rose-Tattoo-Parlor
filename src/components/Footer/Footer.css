@@ -1,0 +1,129 @@
+.app__footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 160px;
+}
+
+.app__footer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app__footer-contact_infos a:hover {
+    border-bottom: 1px solid var(--color-golden);
+}
+
+.app__footer-contact_infosPhone,
+.app__footer-contact_infosMail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.app__footer-contact_infosPhone a,
+.app__footer-contact_infosMail a {
+    margin-left: 10px;
+}
+
+.app__footer-contact_follow h6 {
+    margin-bottom: 5px;
+}
+
+.app__footer-contact_followMedia a {
+    font-size: 25px;
+    margin: 10px 5px 0 5px;
+    color: var(--color-white);
+}
+
+.app__footer-contact_followMedia a:hover {
+    color: var(--color-grey);
+}
+
+.app__footer-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__footer-center p {
+    max-width: 330px;
+    margin-top: 20px;
+}
+
+.app__footer-center p span {
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.app__footer-hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .app__footer {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .app__footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .app__footer-contact {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .app__footer-center {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .app__footer-hours {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .app__footer {
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .app__footer-contact {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .app__footer-center {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    .app__footer-hours {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+}
