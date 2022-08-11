@@ -2,12 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Splash:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 :root {
   --font-logo: 'Water Brush', cursive;
   --font-smallScreenMenu: 'Splash', cursive;
   --font-base: 'Cinzel Decorative', cursive;
   --font-second: 'Kelly Slab', cursive;
+  --font-inputs: 'Syne Mono', monospace;
   
   --color-golden: rgb(209, 158, 38);
   --color-black: #030701;

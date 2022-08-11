@@ -26,6 +26,7 @@ import vogue from '../assets/vogue.png';
 import wwd from '../assets/wwd.png';
 import ty from '../assets/ty.png';
 import machine from '../assets/machine.png';
+import banner from '../assets/banner.jpg';
 
 
 export default {
@@ -57,4 +58,5 @@ export default {
   wwd,
   ty,
   machine,
+  banner,
 };

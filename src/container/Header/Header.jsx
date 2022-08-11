@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { images } from '../../constants';
 
 import './Header.css';
@@ -10,7 +11,7 @@ const Header = () => (
       <div className='app__wrapper_info'>
         <h1 className='p__headtext'>Where fine art meets flesh</h1>
         <p className='p__text' style={{margin: '30px 0'}}>At Black Rose Tattoo Parlor we pride ourselves on quality tattoos in a clean sterile environment. Based in Miami, USA, our tattoo artists will work with you to create the best tattoo you want. From custom design’s, traditional, black & grey, portraits and everything in between our tattooists wealth of knowledge and experience will ensure you get the best tattoo you will be proud to wear for life.</p>
-        <button type='button' className='custom__button'>Book an appointment</button>
+        <Link to='/appointment' type='button' className='custom__button'>Book an appointment</Link>
       </div>
 
       <div className='app__wrapper_img'>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { images } from '../../constants';
 import { Logo } from '../../components';
@@ -20,7 +21,7 @@ const Navbar = () => {
       </ul>
 
       <div className='app__navbar-reserve'>
-        <a href='#reserve' className='p__text'>Book an appointment</a>
+        <Link to='/appointment' className='p__text'>Book an appointment</Link>
       </div>
 
       <div className='app__navbar-smallscreen'>
@@ -35,7 +36,7 @@ const Navbar = () => {
               <li className='p__text'><a href='#reviews'>Reviews</a></li>
             </ul>
             <div className='break-line'></div>
-            <a href='#reserve' className='smallscreen_reserve p__text'>Book an appointment</a>
+            <Link to='/appointment' className='smallscreen_reserve p__text'>Book an appointment</Link>
           </div>
         )}
       </div>
