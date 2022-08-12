@@ -1,0 +1,24 @@
+.scroll {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+
+.scroll button {
+  	padding: 5px;
+}
+
+.scroll button {
+	border-radius: 2px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.scroll button:hover {
+	transform: translateY(-22%);
+}
+
+.scroll button::after {
+	transform: translateY(-30%);
+	background-color: rgba(0, 0, 0, 0);
+}

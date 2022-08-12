@@ -36,7 +36,7 @@ const Navbar = () => {
               <li className='p__text'><a href='#reviews'>Reviews</a></li>
             </ul>
             <div className='break-line'></div>
-            <Link to='/appointment' className='smallscreen_reserve p__text'>Book an appointment</Link>
+            <Link to='/appointment' className='smallscreen_reserve p__text'><a href='reserve'>Book an appointment</a></Link>
           </div>
         )}
       </div>

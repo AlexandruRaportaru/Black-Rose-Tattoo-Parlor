@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiInstagram, FiYoutube, FiFacebook, FiTwitter } from 'react-icons/fi';
+import { FaInstagram, FaYoutube, FaFacebookF, FaTwitter } from 'react-icons/fa';
 import { TiMail, TiPhone } from 'react-icons/ti';
 import { Logo } from '../../components';
 
@@ -24,16 +24,16 @@ const Footer = () => (
         <h6 className='p__text' style={{color: 'var(--color-golden)'}}>Follow Us</h6>
         <div className='app__footer-contact_followMedia'>
           <a href='https://twitter.com/' target='_blank' rel="noreferrer">
-            <FiTwitter />
+            <FaTwitter />
           </a>
           <a href='https://www.facebook.com/' target='_blank' rel="noreferrer">
-            <FiFacebook />
+            <FaFacebookF />
           </a>
           <a href='https://www.instagram.com/' target='_blank' rel="noreferrer">
-            <FiInstagram />
+            <FaInstagram />
           </a>
-          <a href='https://www.youtube.com/' target='_blank' rel="noreferrer" style={{margin: '0 10px'}}>
-            <FiYoutube />
+          <a href='https://www.youtube.com/' target='_blank' rel="noreferrer">
+            <FaYoutube />
           </a>
         </div>
       </div>

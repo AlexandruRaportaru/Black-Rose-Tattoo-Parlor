@@ -1,4 +1,5 @@
 import React from 'react';
+import { Logo } from '../../components';
 import { images, data } from '../../constants';
 import { FaUpload } from 'react-icons/fa';
 
@@ -8,6 +9,7 @@ const Appointment = () => {
 
   return (
   <div className='book__wrapper'>
+    <div className='book__wrapper-logo'><Logo /></div>
     <div className='book__wrapper-banner'>
       <img src={images.banner} alt='banner'/>  
     </div>

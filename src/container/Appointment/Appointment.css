@@ -1,9 +1,17 @@
+.book__wrapper-logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
 .book__wrapper-banner {
     display: flex;
+    justify-content: end;
+    background: var(--color-black);
+    padding-top: 20px;
 }
 
 .book__wrapper-banner img{
-    width: 100%;
     height: 100%;
 }
 
@@ -41,9 +49,30 @@
     padding: 5px;
 }
 
-.box2 {
-    justify-self: stretch;
+.box2 input {
+    width: 342px;
 }
+
+.box3 input {
+    width: 385px;
+}
+
+.box4 input {
+    width: 302px;
+}
+
+.box7 input {
+    width: 290px;
+}
+
+.box8 input {
+    width: 170px;
+}
+
+.box11 textarea {
+    width: 342px;
+}
+
 
 .upload__files-input {
     width: 0.1px;

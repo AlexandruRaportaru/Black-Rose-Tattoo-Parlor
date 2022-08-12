@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AboutUs, Artists, Map, Header, Intro, Reviews, Appointment } from './container';
-import { Navbar, Footer } from './components';
+import { Navbar, Footer, Scroll } from './components';
+
 import './App.css';
 
 
@@ -26,14 +27,15 @@ const DashboardPage = () => (
     <Reviews />
     <Map />
     <Footer />
+    <Scroll />
   </div>
 );
 
 const AppointmentPage = () => (
   <div>
-    <Navbar />
     <Appointment />
     <Footer />
+    <Scroll />
 </div>
 );
 

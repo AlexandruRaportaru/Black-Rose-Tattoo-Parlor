@@ -36,10 +36,67 @@
     margin: 0 15px;
     cursor: pointer;
     font-size: 16px;
+    list-style: outside none none;
 }
 
 .app__navbar-links li:hover {
     color: var(--color-grey);
+}
+
+.app__navbar-links * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.app__navbar-links a {
+    padding: 0.5em 0.8em;
+    margin: 0.2em 0;
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    text-decoration: none;
+}
+
+.app__navbar-links a:before,
+.app__navbar-links a:after {
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+}
+
+.app__navbar-links a:before {
+    left: 0;
+    top: 0;
+    border-left: 3px solid var(--color-golden);
+    border-top: 3px solid var(--color-golden);
+    -webkit-transform: translate(100%, 50%);
+    transform: translate(100%, 50%);
+}
+
+.app__navbar-links a:after {
+    right: 0;
+    bottom: 0;
+    border-right: 3px solid var(--color-golden);
+    border-bottom: 3px solid var(--color-golden);
+    -webkit-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%);
+}
+
+.app__navbar-links a:hover {
+    color: #ffffff;
+}
+
+.app__navbar-links a:hover:before,
+.app__navbar-links a:hover:after {
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
 }
 
 .app__navbar-reserve {
@@ -107,10 +164,33 @@
     color: var(--color-white);
 }
 
+.app__navbar-smallscreen_overlay a {
+    display: inline-block;
+    position: relative;
+}
+
+.app__navbar-smallscreen_overlay a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: var(--color-golden);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.app__navbar-smallscreen_overlay a:hover:after {
+    width: 100%; 
+    left: 0;
+}
+
 .app__navbar-smallscreen_overlay div {
     width: 250px;
     height: 1px;
-    background: var(--color-golden);
+    background: var(--color-white);
     margin-bottom: 30px;
 }
 
@@ -145,4 +225,3 @@
         display: flex;
     }
 }
-
