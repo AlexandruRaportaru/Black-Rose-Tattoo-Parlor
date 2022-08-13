@@ -13,3 +13,30 @@
     font-size: 25px;
     padding: 5px 9px 0 7px;
 }
+
+@media screen and (max-width: 1000px) {
+    .app__logo-letter {
+        width: 30px;
+        font-weight: 100;
+        font-size: 20px;
+        padding: 4px 7px 0 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .app__logo-letter {
+        width: 25px;
+        font-weight: 100;
+        font-size: 15px;
+        padding: 3px 6px 0 5px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .app__logo-letter {
+        width: 20px;
+        font-weight: 100;
+        font-size: 13px;
+        padding: 2px 4px 0 3px;
+    }
+}

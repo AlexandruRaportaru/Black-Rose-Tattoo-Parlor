@@ -30,6 +30,10 @@
   display: flex;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .app__bg {
   background: url('./assets/bg.png');
   background-position: center;
@@ -159,7 +163,8 @@
   }
   
   .p__headtext {
-    font-size: 35px;
+    font-size: 30px;
+    line-height: 35px;
   }
 
   .p__text {

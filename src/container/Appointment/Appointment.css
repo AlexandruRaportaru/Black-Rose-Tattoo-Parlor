@@ -1,18 +1,56 @@
 .book__wrapper-logo {
     position: absolute;
+    z-index: 1;
     top: 20px;
     left: 30px;
 }
 
 .book__wrapper-banner {
+    position: relative;
     display: flex;
     justify-content: end;
     background: var(--color-black);
     padding-top: 20px;
 }
 
+.book__wrapper-banner {
+    width: 100%;
+}
+
 .book__wrapper-banner img{
-    height: 100%;
+    width: 100%;
+}
+
+.book__wrapper-banner__scroll {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 30px;
+    height: 100px;
+}
+
+.book__wrapper-banner__scroll-label {
+    display: block;
+    position: relative;
+    color: var(--color-golden) !important;
+    font-size: 9.7px;
+    font-weight: 900;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    letter-spacing: 1.6px;
+    top: 23px;
+    line-height: 0px !important;
+}
+
+.book__wrapper-banner__scroll-line {
+    width: 1px;
+    height: 46.4px;
+    border-right: solid 1px var(--color-golden);
+    display: block;
+    bottom: 0px;
+    position: absolute;
+    left: 19px;
 }
 
 .book__wrapper-section {
@@ -29,10 +67,42 @@
 }
 
 .book__wrapper-section_fragment {
+    padding: 60px 0;
+    margin: 0 auto;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 450px 450px;
     row-gap: 20px;
-    column-gap: 70px;
+    justify-content: space-around;
+}
+
+.book__wrapper-section_fragment label {
+    min-width: max-content;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6,
+.box7, .box8, .box9, .box10, .box11, .box12 {
+    width: 100%;
+}
+
+.box1, .box3, .box5, .box7, .box9, .box11 {
+    width: 430px;
+    justify-self: flex-start;
+}
+
+.box2, .box4, .box6, .box8, .box10, .box12 {
+    width: 430px;
+    justify-self: flex-end;
+}
+
+.box1 input, .box2 input, .box3 input, 
+.box4 input, .box7 input, .box8 input,
+.box11 textarea {
+    width: 100%;
+}
+
+.box11 textarea {
+    height: 100%;
 }
 
 .box5 p, .box6 p, .box12 p{
@@ -48,31 +118,6 @@
     font-size: 16px;
     padding: 5px;
 }
-
-.box2 input {
-    width: 342px;
-}
-
-.box3 input {
-    width: 385px;
-}
-
-.box4 input {
-    width: 302px;
-}
-
-.box7 input {
-    width: 290px;
-}
-
-.box8 input {
-    width: 170px;
-}
-
-.box11 textarea {
-    width: 342px;
-}
-
 
 .upload__files-input {
     width: 0.1px;
@@ -107,4 +152,141 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width: 1920px) {
+    .box2, .box4, .box6, .box8, .box10, .box12 {
+        width: 496px;
+    }
+
+    .box1, .box3, .box5, .box7, .box9, .box11 {
+        width: 496px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .book__wrapper-banner__scroll{
+        display: none;
+    }
+
+    .book__wrapper-section {
+        padding: 30px 100px !important;
+    }
+
+    .book__wrapper-section_fragment {
+        padding: 60px 50px;
+        grid-template-columns: 1fr;
+    }
+
+    .box1, .box3, .box5, .box7, .box9, .box11 {
+        width: 100%;
+        justify-self: stretch;
+    }
+
+    .box2, .box4, .box6, .box8, .box12 {
+        width: 100%;
+        justify-self: stretch;
+    }
+
+    .box10 {
+        max-width: 260px;
+        justify-self: stretch;
+    }
+
+    .box11 textarea {
+        margin: 0;
+        height: 92px;
+    }
+
+    .book__wrapper-section_fragment-Artists_checkboxes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .book__wrapper-section_fragment-Artists_checkboxes div{
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .book__wrapper-logo {
+        width: 70%;
+        height: 80%;
+    }
+
+    .book__wrapper-section_fragment-Artists_checkboxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .book__wrapper-section_fragment-Artists_checkboxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .book__wrapper-section_fragment {
+        padding: 60px 25px;
+    }
+
+    .book__wrapper-section_fragment-Artists_checkboxes div{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .book__wrapper-logo {
+        top: 15px;
+        left: 15px;
+    }
+
+    .book__wrapper-section {
+        padding: 30px 20px !important;
+    }
+
+    .book__wrapper-section_title {
+        font-size: 35px; 
+    }
+
+    .book__wrapper-section_fragment {
+        padding: 30px 0 60px 0;
+    }
+
+    .box1, .box2, .box3, .box4, 
+    .box7, .box8, .box11, .box12 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box5 p, .box6 p, .box12 p {
+        font-size: 14px;
+    }
+
+    .book__wrapper-section_fragment-Artists_checkboxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .book__wrapper-section_fragment-FullName .flex {
+        flex-direction: column;
+    }
+
+    .box1 .section__margin, .box2-content,
+    .box3-content, .box4-content,
+    .box7-content, .box8-content,
+    .box11-content {
+        margin: 3px 0 0 0 !important;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .book__wrapper-section_title {
+        font-size: 30px; 
+    }
+
+    .book__wrapper-section_fragment label {
+        min-width: auto;
+    }
 }
