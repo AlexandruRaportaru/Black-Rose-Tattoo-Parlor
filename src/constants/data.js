@@ -1,9 +1,9 @@
 import images from './images';
 
 function importAll(r) {
-  let images = {};
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-  return images;
+  let tattooImages = {};
+  r.keys().map((item, index) => { tattooImages[item.replace('./', '')] = r(item); });
+  return tattooImages;
 }
 const vitoImages = importAll(require.context('../assets/vito', false, /\.(png|jpe?g|svg)$/));
 const griseldaImages = importAll(require.context('../assets/griselda', false, /\.(png|jpe?g|svg)$/));
