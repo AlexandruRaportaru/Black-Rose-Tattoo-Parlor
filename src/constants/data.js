@@ -103,4 +103,5 @@ const logos = [
     images.mtv,
 ]
 
+
 export default { artists, reviews, logos };
