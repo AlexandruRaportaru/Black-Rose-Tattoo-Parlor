@@ -30,10 +30,10 @@ const Navbar = () => {
           <div className='app__navbar-smallscreen_overlay flex__center slide__bottom'>
             <img src={images.machine} alt='machine' className='overlay__close' onClick={() => setToggleMenu(false)} />
             <ul className='app__navbar-smallscreen_links'>
-              <li className='p__text'><a href='#home'>Home</a></li>
-              <li className='p__text'><a href='#about'>About us</a></li>
-              <li className='p__text'><a href='#artists'>Artists</a></li>
-              <li className='p__text'><a href='#reviews'>Reviews</a></li>
+              <li className='p__text'><a href='#home' onClick={() => setToggleMenu(false)}>Home</a></li>
+              <li className='p__text'><a href='#about' onClick={() => setToggleMenu(false)}>About us</a></li>
+              <li className='p__text'><a href='#artists' onClick={() => setToggleMenu(false)}>Artists</a></li>
+              <li className='p__text'><a href='#reviews' onClick={() => setToggleMenu(false)}>Reviews</a></li>
             </ul>
             <div className='break-line'></div>
             <Link to='/appointment' className='smallscreen_reserve p__text'><a href='reserve'>Book an appointment</a></Link>

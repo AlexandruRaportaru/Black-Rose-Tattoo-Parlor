@@ -122,6 +122,17 @@
     outline: none;
 }
 
+.box9 select {
+    margin-bottom: 3px;
+    background: var(--color-golden);
+    font-weight: 900;
+    width: 162px;
+}
+
+.box9 select, .box9 option {
+    font-weight: bold;
+}
+
 .upload__files-input {
     width: 0.1px;
     height: 0.1px;
@@ -148,6 +159,16 @@
     font-style: normal;
     font-size: 16px;
     color: var(--color-black);
+}
+
+.upload__files-done {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid var(--color-golden);
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .box11 textarea {

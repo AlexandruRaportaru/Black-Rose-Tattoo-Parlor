@@ -9,9 +9,8 @@ import carlo from '../assets/carlo.jpg';
 import raffaella from '../assets/raffaella.jpg';
 import domenico from '../assets/domenico.jpg';
 import rosetta from '../assets/rosetta.jpg';
-import neon from '../assets/neon.png';
 import kelly from '../assets/kelly.png';
-import david from '../assets/david.png';
+import keanu from '../assets/keanu.png';
 import rihanna from '../assets/rihanna.png';
 import megan from '../assets/megan.png';
 import hp from '../assets/hp.png';
@@ -41,9 +40,8 @@ export default {
   raffaella,
   domenico,
   rosetta,
-  neon,
   kelly,
-  david,
+  keanu,
   rihanna,
   megan,
   hp,

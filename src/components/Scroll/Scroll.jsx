@@ -5,18 +5,18 @@ import './Scroll.css';
 
 const Scroll = () => {
     const [isVisible, setisVisible] = useState(false);
-
+    
     const classNames = (...classes) => {
         return classes.filter(Boolean).join(' ');
-    }
+    };
 
     const toggleVisibility = () => {
-        if (window.pageYOffset > 300) {
+        if (window.pageYOffset > 100) {
             setisVisible(true)
         } else {
             setisVisible(false)
         }
-    }
+    };
 
     const scrollToTop = () => {
         window.scrollTo({

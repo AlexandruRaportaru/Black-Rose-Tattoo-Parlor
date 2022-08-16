@@ -79,8 +79,8 @@ const reviews = [
     commentCeleb: '“A really friendly place to get your first tattoo done! Great artists who are willing to listen patiently to your suggestions! My first tattoo experience with Vito couldn’t have been better.”',
   },
   {
-    imgCeleb: images.david,
-    nameCeleb: 'David',
+    imgCeleb: images.keanu,
+    nameCeleb: 'Keanu',
     commentCeleb: '“I am really happy with how the tattoo turned out. Carlo is pretty good at what he does. All I can say is my first tattoo is not a regret. Thanks to Black Rose Tattoo Parlor.”',
   },
   {
@@ -103,5 +103,16 @@ const logos = [
     images.mtv,
 ]
 
+const skinColors = {
+  '#F8D5C2': 'Pale',
+  '#EFBBA6': 'Rosy-pale',
+  '#E6AA86': 'Light',
+  '#D2946B': 'Normal',
+  '#C58F63': 'Tan',
+  '#AE7142': 'Exotic',
+  '#845736': 'Medium',
+  '#715031': 'Dark',
+  '#88563B': 'Native'
+}
 
-export default { artists, reviews, logos };
+export default { artists, reviews, logos, skinColors };
