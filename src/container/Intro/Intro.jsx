@@ -7,7 +7,7 @@ const Intro = () => {
 
   return (
     <div className='app__video'>
-      <video src={tattoo} type='video/mp4' loop controls={false} muted autoPlay/>
+      <video src={tattoo} type='video/mp4' controls={false} loop muted autoPlay playsInline/>
       <div className='app__video-overlay flex__center'>
         <p className='app__video-overlay_text flex__center'>“Show me a man with a tattoo and I'll show you a man with an interesting past.” — Jack London</p>
       </div>

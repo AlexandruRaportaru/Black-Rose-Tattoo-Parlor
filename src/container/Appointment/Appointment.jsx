@@ -405,7 +405,7 @@ const valuesCheckboxes = () => {
           </label>
           <div className='book__wrapper-section_fragment-Artists_checkboxes'>
             {data.artists.map(artist => (
-              <div key={artist.nameArtist} className='flex section__margin '>
+              <div key={artist.nameArtist} className='flex section__margin double'>
                 <input
                   type='checkbox' 
                   value={artist.nameArtist} 
@@ -413,7 +413,7 @@ const valuesCheckboxes = () => {
                   name='artists'
                   required
                 />
-                <p className='p__labeltext'>{artist.nameArtist}</p>
+                <label className='p__labeltext'>{artist.nameArtist}</label>
               </div>
             ))}
           </div>

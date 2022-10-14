@@ -100,7 +100,7 @@
     width: 100%;
 }
 
-.box5 p, .box6 p, .box12 p{
+.box5 p, .box6 p{
     margin-left: 5px;
     font-size: 16px;
     font-style: normal;
@@ -181,6 +181,33 @@
     align-items: center;
 }
 
+.box12 div {
+    align-items: center;
+}
+
+.box12 input[type='checkbox'] {
+    width:15px;
+    height:15px;
+}
+
+.box12 input[type='checkbox']:checked {
+    -moz-appearance: none !important;
+    background: var(--color-black) !important;
+    border: 2px solid var(--color-white) !important;
+    color: var(--color-golden) !important;
+}
+
+[type="checkbox"]:disabled + label {
+    text-decoration: line-through;
+    color: var(--color-grey);
+}
+
+.book__wrapper-section_fragment-Artists_checkboxes label {
+    margin-left: 7px;
+    font-size: 16px;
+    font-style: normal;
+}
+
 @media screen and (min-width: 1920px) {
     .box2, .box4, .box6, .box8, .box10, .box12 {
         width: 496px;
@@ -242,18 +269,18 @@
 }
 
 @media screen and (max-width: 650px) {
-    .book__wrapper-section_fragment-Artists_checkboxes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     .book__wrapper-section_fragment {
         padding: 60px 25px;
     }
 
+    .book__wrapper-section_fragment-Artists_checkboxes {
+        display: block;
+    }
+
     .book__wrapper-section_fragment-Artists_checkboxes div{
         margin-left: 10px;
+        display: flex;
+        align-items: center;
     }
 }
 

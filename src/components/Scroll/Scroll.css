@@ -30,3 +30,9 @@
 .opacity-0 {
 	opacity: 0;
 }
+
+@media screen and (max-width: 700px) {
+	.scroll button {
+		padding: 2px;
+  }
+}
